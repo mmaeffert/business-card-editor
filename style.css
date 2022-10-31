@@ -1,0 +1,42 @@
+.visitenkarte{
+    width: 850px;
+    height: 550px;
+    background: url("kamaBackground.jpg");
+    background-size: initial;
+    background-color: aqua;
+    position: relative;
+}
+.logo{
+    justify-content: center;
+    width: 400px;
+}
+.name-of-person{
+    font-size: 45px;
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+.position-of-person{
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.contact-information-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+}
+.contact-information-text{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+}

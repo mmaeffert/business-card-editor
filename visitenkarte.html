@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+
+<table>
+    <tr>
+        <th>
+            <div class="visitenkarte">
+                <img class="logo" src="Kama-Logo-Text-Black.png">
+                <br>
+                <p id="name-of-person" class="name-of-person">Max Mäffert</p>
+                <p id="position-of-person" class="position-of-person">Geschäftsführung</p>
+                <div class="contact-information-container">
+                    <p id="phonenumber-of-person" class="contact-information-text">Heeskampfshof 48</p>
+                    <p id="email-of-person" class="contact-information-text">Heeskampfshof 48</p>
+                    <p id="website-of-person" class="contact-information-text">Heeskampfshof 48</p>
+                </div>
+            </div>
+        </th>
+        <th>
+            <p>name</p>
+            <input type="text" id="name-input-field" onkeyup="adjustName()">
+            <p>position</p>
+            <input type="text" id="position-input-field" onkeyup="adjustPosition()">
+            <p>Telefonnummer</p>
+            <input type="tel" id="phonenumber-input-field" onkeyup="adjustPhonenumber()">
+            <p>Email</p>
+            <input type="text" id="email-input-field" onkeyup="adjustName()">
+            <p>website</p>
+            <input type="text" id="website-input-field" onkeyup="adjustWebsite()">
+
+            <script type = "text/javascript">
+                function adjustName(caller_id){
+                    document.getElementById("name-of-person").innerHTML = document.getElementById("name-input-field").value;
+                }
+                function adjustPosition(caller_id){
+                    document.getElementById("position-of-person").innerHTML = document.getElementById("position-input-field").value;
+                }
+                function adjustPhonenumber(caller_id){
+                    document.getElementById("phonenumber-of-person").innerHTML = document.getElementById("phonenumber-input-field").value;
+                }
+                function adjustEmail(caller_id){
+                    document.getElementById("email-of-person").innerHTML = document.getElementById("email-input-field").value;
+                }
+                function adjustWebsite(caller_id){
+                    document.getElementById("website-of-person").innerHTML = document.getElementById("website-input-field").value;
+                }
+            </script>
+        </th>
+    </tr>
+</table>
+
+</body>
+</html>
